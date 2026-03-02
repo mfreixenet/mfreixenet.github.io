@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap');
+
 body {
     background-color: #2e3440; /* Un gris azulado elegante */
     color: white;
@@ -7,4 +9,38 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    .logo-container {
+    display: flex;         /* Activamos Flexbox */
+    align-items: center;    /* Centramos verticalmente icono y texto */
+    text-decoration: none;  /* Quitamos el subrayado azul de los enlaces */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-icon {
+    background: linear-gradient(45deg, #3498db, #2ecc71); /* Un degradado azul a verde */
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;         /* Flexbox otra vez para centrar la "M" */
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;    /* Bordes redondeados (estilo App) */
+    font-weight: 900;
+    font-size: 24px;
+    margin-right: 12px;     /* Espacio entre icono y texto */
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3); /* Sombra suave */
+}
+
+.logo-text {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: -1px;   /* Letras un poco más juntas para que parezca logo */
+    color: #2c3e50;         /* Gris muy oscuro, casi negro */
+}
+
+.text-alt {
+    color: #3498db;         /* La segunda palabra en azul */
+    font-weight: 400;       /* Más fina para crear contraste */
+}
 }
